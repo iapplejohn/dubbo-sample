@@ -1,2 +1,1 @@
-# dubbo-sample
-dubbo sample
+dubbo-sample

@@ -1,0 +1,73 @@
+environment: @environment@
+
+spring:
+  application:
+    name: dubbo-sample
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+    default-property-inclusion: non_null
+#  datasource:
+#    druid:
+#      url: jdbc:mysql://@db.url@?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+#      username: @db.username@
+#      password: @db.password@
+#      #下面这些参数为固定参数,无需修改
+#      filters: wall
+#      db-type: mysql
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      # 连接池配置
+#      initial-size: 1
+#      min-idle: 1
+#      max-active: 20
+#      max-wait: 60000
+#      min-evictable-idle-time-millis: 300000
+#      validation-query: SELECT 'x'
+#      test-while-idle: true
+#      test-on-borrow: false
+#      test-on-return: false
+#      pool-prepared-statements: false
+#      max-pool-prepared-statement-per-connection-size: 20
+#      filter:
+#        config:
+#          enabled: false
+#        stat:
+#          enabled: false
+#        wall:
+#          enabled: true
+#      web-stat-filter:
+#        enabled: false
+#      stat-view-servlet:
+#        enabled: false
+
+dubbo:
+  application:
+    name: @project.artifactId@
+    owner: Zhujiang.Cheng
+  provider:
+    threads: 100
+  config-center:
+#    address: zookeeper://dev2-b2b-us-zk1.pingpongx.com:2181
+    address: zookeeper://dev-zk1.pingpongx.com:2181
+#    address: zookeeper://localhost:2181
+  metadata-report:
+    address: zookeeper://dev-zk1.pingpongx.com:2181
+#    address: zookeeper://localhost:2181
+#    address: zookeeper://dev2-b2b-us-zk1.pingpongx.com:2181
+  protocol:
+    port: 20881
+  monitor:
+    address: dubbo://172.16.12.23:20888/org.apache.dubbo.monitor.MonitorService?application=simple-monitor&deprecated=false&dubbo=2.0.2&release=2.7.3&timeout=15000&timestamp=1595835796077
+    protocol: dubbo
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/**/*.xml
+  global-config:
+    id-type: 0
+    db-column-underline: false
+
+
+logging:
+  level:
+    root: info
+    com.jemmy.dubbo.sample: debug

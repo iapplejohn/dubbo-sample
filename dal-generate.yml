@@ -1,0 +1,8 @@
+projectPath: /Users/chengzhujiang/Documents/1004_own/dubbo-sample/dubbo-sample-dal
+tableNames:
+  - table1
+dalPackage: com.jemmy.dubbo.sample.dal
+datasource:
+  url: jdbc:mysql://localhost:3306/dubbo-sample
+  username: root
+  password: root_pwd
