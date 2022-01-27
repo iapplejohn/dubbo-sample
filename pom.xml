@@ -31,7 +31,7 @@
         <jdk.version>1.8</jdk.version>
 
         <druid.version>1.1.14</druid.version>
-        <dubbo.version>2.7.4.1</dubbo.version>
+        <dubbo.version>2.7.15</dubbo.version>
         <dubbo.alibaba.version>2.5.8</dubbo.alibaba.version>
         <apache.zookeeper.version>3.4.13</apache.zookeeper.version>
         <apache.curator.version>4.0.0</apache.curator.version>
