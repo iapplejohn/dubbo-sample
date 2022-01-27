@@ -1,0 +1,6 @@
+Dubbo Sample Version
+
+
+                 application:   ${spring.application.name}
+                 Spring Boot:   ${spring-boot.version}
+                 environment:   ${environment}

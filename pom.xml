@@ -25,6 +25,7 @@
         <module>dubbo-sample-api</module>
         <module>dubbo-sample-dal</module>
         <module>dubbo-sample-dal-core</module>
+        <module>dubbo-sample-version</module>
     </modules>
 
     <properties>
