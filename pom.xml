@@ -33,7 +33,7 @@
         <druid.version>1.1.14</druid.version>
         <dubbo.version>2.7.15</dubbo.version>
         <dubbo.alibaba.version>2.5.8</dubbo.alibaba.version>
-        <apache.zookeeper.version>3.4.13</apache.zookeeper.version>
+        <apache.zookeeper.version>3.4.14</apache.zookeeper.version>
         <apache.curator.version>4.0.0</apache.curator.version>
         <mybatis-plus.version>3.1.1</mybatis-plus.version>
     </properties>
@@ -136,7 +136,7 @@
             <dependency>
                 <groupId>commons-beanutils</groupId>
                 <artifactId>commons-beanutils</artifactId>
-                <version>1.9.3</version>
+                <version>1.9.4</version>
             </dependency>
 
             <dependency>
@@ -148,7 +148,7 @@
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-                <version>20.0</version>
+                <version>[24.1.1,)</version>
             </dependency>
 
             <dependency>
